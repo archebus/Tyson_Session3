@@ -26,7 +26,7 @@ This project is a simple book review platform built with Node.js, Express, Seque
 
    ```bash
    git clone git@github.com:archebus/Tyson_Session3.git
-   cd book-review-platform
+   cd Tyson_Session3
 
 2. **Install Dependencies**
 
