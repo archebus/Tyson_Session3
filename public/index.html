@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <title>Book Review Platform</title>
+</head>
+<body>
+
+  <div class="grid">
+
+    <img src="./img/cat.png" alt="cat_logo" class="cat-image">
+    <h1 class="main-header">Archebus' Dumb Dumb Book Reviews</h1>
+    <div class="book-wrapper wrap">
+      <h2>Books</h2>
+      <div id="booksList" class="books-list">
+      <!-- List of books will be dynamically populated here -->
+      </div>
+    </div>
+
+    <div class="review-wrapper wrap">
+      <h2>Reviews</h2>
+      <select id="bookSelect" onchange="fetchReviews()">
+        <option value="">Select a book</option>
+        <!-- Options will be dynamically populated here -->
+      </select>
+      <div id="reviews" class="reviews">
+      <!-- Reviews will be displayed here -->
+      </div>
+    </div>
+
+    <div class="new-book-wrapper wrap">
+      <div id="bookForm" class="book-form">
+        <h2>Add a new book:</h2>
+        <form id="addBookForm">
+        <label for="bookTitle">Title:</label>
+        <input type="text" id="bookTitle" name="title" required><br><br>
+        <label for="bookAuthor">Author:</label>
+        <input type="text" id="bookAuthor" name="author" required><br><br>
+        <label for="bookPublishedDate">Published Date:</label>
+        <input type="date" id="bookPublishedDate" name="published_date" required><br><br>
+        <label for="bookGenre">Genre:</label>
+        <input type="text" id="bookGenre" name="genre"><br><br>
+        <label for="bookDescription">Description:</label><br>
+        <textarea id="bookDescription" name="description" rows="4" cols="50"></textarea><br><br>
+        <button type="button" onclick="submitBook()">Add Book</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="new-review-wrapper wrap">
+      <h2>Add a Review:</h2>
+      <div id="reviewForm" class="review-form">
+        <form id="addReviewForm">
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="100" required><br><br>
+        <label for="comment">Comment:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+        <button type="button" onclick="submitReview()">Submit Review</button>
+        </form>
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+</html>
