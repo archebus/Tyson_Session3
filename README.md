@@ -28,7 +28,7 @@ This project is a simple book review platform built with Node.js, Express, Seque
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/book-review-platform.git
+   git clone git@github.com:archebus/Tyson_Session3.git
    cd book-review-platform
 
 2. **Install Dependencies**
