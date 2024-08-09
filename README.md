@@ -10,18 +10,15 @@ This project is a simple book review platform built with Node.js, Express, Seque
 - **Add Reviews**: Submit reviews for selected books.
 - **View Reviews**: Display reviews for a selected book.
 
-## Specific Homework
+## Specific Homework Tasks
 
-- **ORM with Sequelize**: Implement ORM with Sequelize for at least 3 types of entities (Books, Reviews).
-- **CRUD Routes**: Create routes for create, retrieve, update, and delete operations.
-- **Frontend**: Develop a static HTML frontend to interact with the backend API.
-
-## Stretch/Extension Tasks
-
-- **Database Persistence**: Ensure database persistence with `.sync()` method in Sequelize. This maintains database schema changes.
-- **Development Importance**: Understand the necessity of persistence during development for maintaining data integrity and avoiding data loss.
-- **Project Restructuring**: Organize the project structure to include a dedicated `models` folder.
-- **Impressive Feature**: Implement an additional impressive feature or enhancement.
+- **ORM with Sequelize**: Implement ORM with Sequelize for at least 3 types of entities (Books, Reviews). [DONE]
+- **CRUD Routes**: Create routes for create, retrieve, update, and delete operations. [PARTIAL] *Need to add delete and update operations.
+- **Frontend**: Develop a static HTML frontend to interact with the backend API. [DONE]
+- **Database Persistence**: Ensure database persistence with `.sync()` method in Sequelize. This maintains database schema changes. [NOT DONE]
+- **Development Importance**: Understand the necessity of persistence during development for maintaining data integrity and avoiding data loss. [DONE]
+- **Project Restructuring**: Organize the project structure to include a dedicated `models` folder. [DONE]
+- **Impressive Feature**: Implement an additional impressive feature or enhancement. [DONE?]
 
 ## Installation
 
