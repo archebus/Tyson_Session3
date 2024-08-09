@@ -45,7 +45,6 @@ This project is a simple book review platform built with Node.js, Express, Seque
     npm run db:create
     npm run db:migrate
 
-
 5. **Seed the Database (Optional)**
 
     You can pre-populate the database with 3 books if you wish.
