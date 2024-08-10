@@ -63,6 +63,28 @@
       </div>
     </div>
 
+    <!-- Modal Structure -->
+    <div id="editBookModal" class="modal">
+      <div class="modal-content">
+          <span class="close" onclick="closeEditBookModal()">&times;</span>
+          <h2>Edit Book:</h2>
+          <form id="editBookForm">
+              <input type="hidden" id="editBookId">
+              <label for="editBookTitle">Title:</label>
+              <input type="text" id="editBookTitle" name="title" required><br><br>
+              <label for="editBookAuthor">Author:</label>
+              <input type="text" id="editBookAuthor" name="author" required><br><br>
+              <label for="editBookPublishedDate">Published Date:</label>
+              <input type="date" id="editBookPublishedDate" name="published_date" required><br><br>
+              <label for="editBookGenre">Genre:</label>
+              <input type="text" id="editBookGenre" name="genre"><br><br>
+              <label for="editBookDescription">Description:</label><br>
+              <textarea id="editBookDescription" name="description" rows="4" cols="50"></textarea><br><br>
+              <button type="button" onclick="updateBook()">Update Book</button>
+              <button type="button" onclick="closeEditBookModal()">Cancel</button>
+          </form>
+      </div>
+    </div>
 
   </div>
 
