@@ -23,7 +23,15 @@ app.use('/reviews', reviewRoutes);
 
 // Main Listen Call
 app.listen(port, async () => {
-  console.log(`Server up on http://localhost:${port}`);
-  await sequelize.authenticate();
-  console.log('Database connected!');
+  try {
+    await sequelize.authenticate();
+    console.log('Database connected!');
+    
+    // Sync database models
+    await sequelize.sync({ alter: true });
+    console.log('Database synced!');
+    console.log(`Server up on http://localhost:${port}`);
+  } catch (error) {
+    console.error('Unable to connect to the database:', error);
+  }
 });
